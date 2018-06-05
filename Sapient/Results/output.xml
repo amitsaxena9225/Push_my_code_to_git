@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180605 18:21:07.445" generator="Robot 3.0.3 (Python 2.7.13 on win32)">
+<suite source="C:\Python27\Scripts\Sapient\tests\Front_office.robot" id="s1" name="Front office">
+<test id="s1-t1" name="Should be able to access &quot;Team&quot; Page">
+<kw type="setup" name="Begin Web Test" library="Common_web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180605 18:21:08.535" level="FAIL">Variable '${URL}' not found.</msg>
+<status status="FAIL" endtime="20180605 18:21:08.536" starttime="20180605 18:21:08.534"></status>
+</kw>
+<status status="FAIL" endtime="20180605 18:21:08.536" starttime="20180605 18:21:08.533"></status>
+</kw>
+<kw type="teardown" name="End Web test" library="Common_web">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180605 18:21:08.537" starttime="20180605 18:21:08.537"></status>
+</kw>
+<status status="PASS" endtime="20180605 18:21:08.537" starttime="20180605 18:21:08.536"></status>
+</kw>
+<doc>This is Test 1</doc>
+<tags>
+<tag>test1</tag>
+</tags>
+<status status="FAIL" endtime="20180605 18:21:08.537" critical="yes" starttime="20180605 18:21:08.532">Setup failed:
+Variable '${URL}' not found.</status>
+</test>
+<test id="s1-t2" name="&quot;Team&quot; Page should match requirements">
+<kw type="setup" name="Begin Web Test" library="Common_web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180605 18:21:08.540" level="FAIL">Variable '${URL}' not found.</msg>
+<status status="FAIL" endtime="20180605 18:21:08.540" starttime="20180605 18:21:08.539"></status>
+</kw>
+<status status="FAIL" endtime="20180605 18:21:08.540" starttime="20180605 18:21:08.539"></status>
+</kw>
+<kw type="teardown" name="End Web test" library="Common_web">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180605 18:21:08.541" starttime="20180605 18:21:08.541"></status>
+</kw>
+<status status="PASS" endtime="20180605 18:21:08.542" starttime="20180605 18:21:08.541"></status>
+</kw>
+<doc>This is test 2</doc>
+<tags>
+<tag>test2</tag>
+</tags>
+<status status="FAIL" endtime="20180605 18:21:08.542" critical="yes" starttime="20180605 18:21:08.538">Setup failed:
+Variable '${URL}' not found.</status>
+</test>
+<doc>Talk about what this test suites does</doc>
+<status status="FAIL" endtime="20180605 18:21:08.543" starttime="20180605 18:21:07.460"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">test1</stat>
+<stat fail="1" pass="0">test2</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Front office" pass="0">Front office</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180605 18:21:07.463" level="ERROR">Error in file 'C:\Python27\Scripts\Sapient\tests\Front_office.robot': Setting variable '${BROWSER} = chrome' failed: Invalid variable name '${BROWSER} = chrome'.</msg>
+<msg timestamp="20180605 18:21:07.463" level="ERROR">Error in file 'C:\Python27\Scripts\Sapient\tests\Front_office.robot': Setting variable '${URL} =http://www.robotframeworktutorial.com/front-office' failed: Invalid variable name '${URL} =http://www.robotframeworktutorial.com/front-office'.</msg>
+<msg timestamp="20180605 18:21:08.528" level="ERROR">Error in file 'C:\Python27\Scripts\Sapient\Tests\Front_office.robot': Non-existing setting 'Test Setup'.</msg>
+<msg timestamp="20180605 18:21:08.529" level="ERROR">Error in file 'C:\Python27\Scripts\Sapient\Tests\Front_office.robot': Non-existing setting 'Test Teardown'.</msg>
+<msg timestamp="20180605 18:21:08.529" level="ERROR">Error in file 'C:\Python27\Scripts\Sapient\Resources\Common_web.robot': Resource file 'C:\Python27\Scripts\Sapient\Tests\Front_office.robot' contains a test case table which is not allowed.</msg>
+</errors>
+</robot>
